@@ -1,5 +1,6 @@
 <?php
-$magicWords = array();
-$magicWords['en'] = array(
-    'shorturl' => array( 0, 'SHORTURL' )
-);
+
+$magicWords = [];
+$magicWords['en'] = [
+    'shorturl' => [0, 'SHORTURL'],
+];

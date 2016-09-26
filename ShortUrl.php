@@ -1,9 +1,9 @@
 <?php
+
 namespace ShortUrls;
 
 class ShortUrl
 {
-
     public static function shorturl(&$parser, &$cache, &$magicWordId, &$ret)
     {
         global $wgTitle, $wgRequest, $wgServer;
@@ -13,11 +13,11 @@ class ShortUrl
             $params = new \DerivativeRequest(
                 $wgRequest,
                 [
-                    'action'  => 'query',
-                    'list' => 'allpages',
+                    'action'        => 'query',
+                    'list'          => 'allpages',
                     'apfilterredir' => 'nonredirects',
-                    'aplimit' => 500,
-                    'apnamespace' => $curNamespace
+                    'aplimit'       => 500,
+                    'apnamespace'   => $curNamespace,
                 ]
             );
             $api = new \ApiMain($params);
@@ -36,12 +36,14 @@ class ShortUrl
             }
             $ret = $wgServer.'/'.$curNum;
         }
+
         return true;
     }
 
     public static function declareIds(&$customVariableIds)
     {
         $customVariableIds[] = 'shorturl';
+
         return true;
     }
 }
