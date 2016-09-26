@@ -1,0 +1,23 @@
+{
+  "name": "ShortUrls",
+  "author": "Pierre Rudloff",
+  "url": "https://github.com/Archi-Strasbourg/mediawiki-archi-home",
+  "description": "Add a SHORTURL magic word that generates a short URL for the current article",
+  "type": "parserhook",
+  "version": "0.1.0",
+  "license-name": "GPL-3.0",
+  "Hooks": {
+    "ParserGetVariableValueSwitch": [
+      "ShortUrls\\ShortUrl::shorturl"
+    ],
+    "MagicWordwgVariableIDs": [
+      "ShortUrls\\ShortUrl::declareIds"
+    ]
+  },
+  "AutoloadClasses": {
+    "ShortUrls\\ShortUrl": "ShortUrl.php"
+  },
+  "ExtensionMessagesFiles": {
+    "ShortUrlMagic": "ShortUrl.i18n.magic.php"
+  }
+}

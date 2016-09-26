@@ -1,0 +1,12 @@
+{
+  "name": "shakepeers/shorturls-mediawiki",
+  "description": "Add a SHORTURL magic word that generates a short URL for the current article",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Pierre Rudloff",
+      "email": "contact@rudloff.pro"
+    }
+  ],
+  "type": "mediawiki-extension"
+}

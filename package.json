@@ -1,0 +1,23 @@
+{
+  "name": "rudloff-starter",
+  "description": "Add a SHORTURL magic word that generates a short URL for the current article",
+  "version": "0.1.0",
+  "author": "Pierre Rudloff",
+  "bugs": "https://github.com/ShakePeers/shorturls-mediawiki/issues",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-fixpack": "~0.1.0",
+    "grunt-jslint": "~1.1.14",
+    "grunt-jsonlint": "~1.1.0"
+  },
+  "homepage": "https://github.com/ShakePeers/shorturls-mediawiki",
+  "keywords": [
+    "mediawiki"
+  ],
+  "license": "GPL-3.0",
+  "main": "ShortUrl.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShakePeers/shorturls-mediawiki.git"
+  }
+}
